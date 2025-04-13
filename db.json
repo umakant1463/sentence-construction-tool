@@ -1,0 +1,64 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "sentence": "The company's ___ approach to product development ___ customer feedback at every stage, ___ user satisfaction and ___ a loyal consumer base.",
+        "options": ["Incorporated", "User-centric", "Enhancing", "Cultivating"],
+        "correctAnswers": ["User-centric", "Incorporated", "Enhancing", "Cultivating"]
+      },
+      {
+        "id": 2,
+        "sentence": "The ___ musical performance ___ elements from various genres, ___ the audience with its unique sound and ___ critical acclaim from industry experts.",
+        "options": ["Captivating", "Eclectic", "Garnering", "Blended"],
+        "correctAnswers": ["Eclectic", "Blended", "Captivating", "Garnering"]
+      },
+      {
+        "id": 3,
+        "sentence": "The scientist's ___ research on quantum computing ___ new possibilities for data processing, ___ traditional limitations and ___ the way for groundbreaking technological advancements.",
+        "options": ["Pioneering", "Paving", "Overcoming", "Opened up"],
+        "correctAnswers": ["Pioneering", "Opened up", "Overcoming", "Paving"]
+      },
+      {
+        "id": 4,
+        "sentence": "The ___ implementation of machine learning algorithms in medical diagnostics ___ early detection of diseases, ___ treatment outcomes and ___ the workload of healthcare professionals.",
+        "options": ["Improving", "Reducing", "Enabled", "Revolutionary"],
+        "correctAnswers": ["Revolutionary", "Enabled", "Improving", "Reducing"]
+      },
+      {
+        "id": 5,
+        "sentence": "The ___ security breach at the tech giant ___ millions of users' data, ___ concerns about online privacy and ___ calls for stricter regulations.",
+        "options": ["Raising", "Massive", "Prompting", "Compromised"],
+        "correctAnswers": ["Massive", "Compromised", "Raising", "Prompting"]
+      },
+      {
+        "id": 6,
+        "sentence": "The ___ educational reform ___ a more inclusive curriculum, ___ equal opportunities for all students and ___ the overall quality of public schooling.",
+        "options": ["Comprehensive", "Enhancing", "Implemented", "Promoting"],
+        "correctAnswers": ["Comprehensive", "Implemented", "Promoting", "Enhancing"]
+      },
+      {
+        "id": 7,
+        "sentence": "The company's ___ commitment to sustainability ___ eco-friendly practices across all departments, ___ its carbon footprint and ___ a model for corporate responsibility.",
+        "options": ["Implemented", "Setting", "Unwavering", "Reducing"],
+        "correctAnswers": ["Unwavering", "Implemented", "Reducing", "Setting"]
+      },
+      {
+        "id": 8,
+        "sentence": "The ___ implementation of artificial intelligence in healthcare ___ patient outcomes, ___ the workload of medical professionals and ___ new avenues for personalized treatment.",
+        "options": ["Opening", "Improved", "Gradual", "Reducing"],
+        "correctAnswers": ["Gradual", "Improved", "Reducing", "Opening"]
+      },
+      {
+        "id": 9,
+        "sentence": "The ___ festival ___ artists from diverse backgrounds, ___ cultural exchange and ___ a platform for emerging talents to showcase their work.",
+        "options": ["Providing", "Brought together", "Promoting", "International"],
+        "correctAnswers": ["International", "Brought together", "Promoting", "Providing"]
+      },
+      {
+        "id": 10,
+        "sentence": "The ___ implementation of smart city technologies ___ urban efficiency and sustainability, ___ quality of life for residents and ___ a model for future urban development.",
+        "options": ["Enhancing", "Improved", "Providing", "Widespread"],
+        "correctAnswers": ["Widespread", "Improved", "Enhancing", "Providing"]
+      }
+    ]
+  }
