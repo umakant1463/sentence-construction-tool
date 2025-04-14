@@ -11,14 +11,22 @@ function App() {
   const [selectedWords, setSelectedWords] = useState<string[]>(["", "", "", ""]);
   const [timeLeft, setTimeLeft] = useState(30); 
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
+  const [isError, setIsError] = useState(false);
 
   // 👇 Fetch the question
   useEffect(() => {
     fetch(`http://localhost:3000/questions/${questionId}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch");
+        return res.json();
+      })
       .then((data) => {
         setQuestion(data);
         setSelectedWords(Array(data.correctAnswers.length).fill(""));
+        setIsError(false); // success
+      })
+      .catch(() => {
+        setIsError(true); // fail
       });
   }, [questionId]);
 
@@ -88,7 +96,14 @@ function App() {
     setSelectedWords(updated);
   };
 
-  if (!question) return <div>Loading...</div>;
+  if (!question) {
+  return (
+    <div className="text-center mt-20">
+      <h1 className="text-xl font-semibold text-gray-700">⚠️ Questions failed to load</h1>
+      <p className="text-gray-500 mt-2">Make sure <code>json-server</code> is running on <code>localhost:3000</code>.</p>
+    </div>
+  );
+}
 
   // const questionsData = [
   //   {
