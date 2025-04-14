@@ -24,3 +24,9 @@ This is a React + Vite-based sentence construction tool for the CA MONK Frontend
 git clone https://github.com/your-username/sentence-construction-tool.git
 cd sentence-construction-tool
 npm install
+
+> ⚠️ Note: The deployed version on Vercel shows an error unless `json-server` is running locally.
+To test this app, please:
+- Clone the repo
+- Run: `npx json-server --watch db.json --port 3000`
+- Run the app: `npm run dev`
