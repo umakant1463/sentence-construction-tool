@@ -96,14 +96,20 @@ function App() {
     setSelectedWords(updated);
   };
 
+  if (isError) {
+    return (
+      <div className="text-center mt-20">
+        <h1 className="text-xl font-semibold text-red-600">❌ Failed to load questions</h1>
+        <p className="text-gray-500 mt-2">
+          Make sure <code>json-server</code> is running at <code>http://localhost:3000</code>
+        </p>
+      </div>
+    );
+  }
+  
   if (!question) {
-  return (
-    <div className="text-center mt-20">
-      <h1 className="text-xl font-semibold text-gray-700">⚠️ Questions failed to load</h1>
-      <p className="text-gray-500 mt-2">Make sure <code>json-server</code> is running on <code>localhost:3000</code>.</p>
-    </div>
-  );
-}
+    return <div className="text-center mt-20 text-lg">Loading...</div>;
+  }
 
   // const questionsData = [
   //   {
